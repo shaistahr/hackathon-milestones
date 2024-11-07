@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+body {
+    font-family: 'Segoe UI', Verdana;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 20px;
+    color: #333;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cv-container:hover {
+    transform: scale(1.02);
+}
+
+.left-sidebar {
+    background: linear-gradient(135deg, #3e5151, #decba4);
+    color: #ffffff;
+    width: 35%;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.about-me, .skills {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: #2a5298;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.main-content {
+    width: 65%;
+    padding: 20px;
+}
+
+.personal-info h1 {
+    color: #2a5298;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.personal-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.experience h2, .education h2, .skills-summary h2 {
+    background-color: #2a5298;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.job, .school {
+    margin-bottom: 20px;
+}
+
+.job h3, .school h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.job span, .school span {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.skill {
+    background: linear-gradient(135deg, #3e5151, #decba4);
+    color: white;
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden Class for Toggle */
+.hidden {
+    display: none;
+}
+
+/* Button Styling */
+.toggle-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #3e5151, #decba4);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #2a5298;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .left-sidebar,
+    .main-content {
+        width: 100%;
+        padding: 15px;
+    }
+}
