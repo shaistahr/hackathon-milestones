@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1e3c72;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2a5298;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #2a5298;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #2a5298;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Styling */
+input[type="text"], input[type="email"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus {
+    border-color: #2a5298;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: #2a5298;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1e3c72;
+    transform: scale(1.02);
+}
+
+/* Add Button Styles */
+.add-button {
+    background-color: #3e5151;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #2a5298;
+}
+
+/* Section Styles */
+.section {
+    background-color: #2a5298;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+.section .input-group {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
